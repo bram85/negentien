@@ -1,15 +1,15 @@
 {
-  "name": "Nineteen",
-  "version": "0.3.2",
+  "name": "Negentien",
+  "version": "0.3.3",
   "manifest_version": 2,
-  "description": "Finds words of 19 characters long in Dutch webpages.",
+  "description": "Zoekt woorden van 19 letters in Nederlandstalige pagina's.",
   "background": {
     "scripts": [ "background.js" ],
     "persistent": true
   },
   "browser_action": {
     "default_icon": { "19": "icon19.png", "38": "icon38.png" },
-    "default_title": "Nineteen"
+    "default_title": "Negentien"
   },
   "icons": {
     "16": "icon16.png",
