@@ -1,0 +1,19 @@
+{
+  "name": "Nineteen",
+  "version": "0.3.1",
+  "manifest_version": 2,
+  "description": "Finds words of 19 characters long in Dutch webpages.",
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": { "19": "icon19.png", "38": "icon38.png" },
+    "default_title": "Nineteen"
+  },
+  "permissions": [
+    "http://*/*",
+    "tabs"
+  ],
+  "update_url": "https://raw.github.com/bram85/playground/master/nineteen/update.xml"
+}
