@@ -20,7 +20,7 @@ var getActiveWords = function() {
 
     if ( allWords.hasOwnProperty( tabID ) ) {
       activeWords = allWords[ tabID ];
-      chrome.browserAction.setPopup( {
+      chrome.pageAction.setPopup( {
         tabId: pTabID,
         popup: "popup.html"
       } );
@@ -36,10 +36,7 @@ var getActiveWords = function() {
     if ( pMessage.length > 0 ) {
       var tabID = pSender.tab.id;
 
-      chrome.browserAction.setBadgeText( {
-        text: pMessage.length.toString(),
-        tabId: tabID
-      } );
+      chrome.pageAction.show( tabID );
 
       allWords[ tabID.toString() ] = pMessage;
       setActiveWords( tabID );
